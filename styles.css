@@ -1,1 +1,26 @@
 /*  your css code here. If applicable */
+#grid{
+	display:grid;
+	grid-template-rows:124px 124px 124px 124px 124px;
+	grid-template-columns:242.5px 242.5px 242.5px 242.5px;
+	grid-gap:10px 10px;
+}
+.box {
+  background-color: green;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+}
+.box-1{
+	grid-column: span 4/auto;
+	
+}
+.box-2{
+	grid-row:span 4/auto;
+}
+.box-4, .box-5{
+	grid-column: span 2/auto;
+}
+.box-10{
+	grid-column:span 3/auto;
+}
